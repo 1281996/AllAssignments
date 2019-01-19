@@ -1,0 +1,152 @@
+@CHARSET "ISO-8859-1";
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(cart.jpg);
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+	
+}
+
+.main-nav
+{
+	float:right;
+	list-style:none;
+	margin-top:40px;
+	margin-right:40px;
+}
+
+.main-nav li
+{
+	display:inline-block;
+}
+
+.main-nav li a
+{
+color:white;
+text-decoration:none;
+padding:5px 20px;
+font-family:"Roboto", sans-serif;
+font-size:15px;
+
+}
+
+.main-nav li.active a
+{
+	border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid white;
+}
+
+.logo img
+{
+	width:130px;
+	margin-left:20px;
+	height:auto;
+	float:left;
+	background-color:none;
+}
+
+body
+{
+	font-family:monospace;
+	
+}
+
+.row
+{
+max-width:1200px;
+margin:auto;
+}
+
+.hero
+{
+position:absolute; 
+width:800px;
+margin-top:100px;
+margin-left:20px;
+margin-right:0px;
+}
+
+
+h1{
+	color:white;
+	text-transform:uppercase;
+	font-size:40px;
+	text-align:top;
+	/*margin-top:45px;*/
+}
+.button
+{
+margin-top:30px;
+margin-left:440px;
+}
+.btn
+{
+border:1px solid white;
+padding: 10px 30px;
+color:white;
+text-decoration:none;
+margin-right:5px;
+font-size:13px;
+text-transform:uppercase;
+}
+
+.btn-one
+{
+background-color:darkorange;
+font-family:"Roboto",sans-serif;
+}
+
+
+.btn-two
+{
+font-family:"Roboto",sans-serif;
+}
+.btn-two:hover
+{
+
+background-color:darkorange;
+}
+
+.mobile img
+{
+	margin-left:110px;
+	margin-top:100px;
+	width:800px;
+	height:auto;
+	float:center;
+	background-color:none;
+}
+
+.centered {
+  position: absolute;
+ top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%); 
+}
+
+
+h2{
+	color:black;
+	text-transform:uppercase;
+	font-size:50px;
+	text-align:top;
+	margin-top:45px;
+}
+p
+{
+	color: white;
+	font-family:"Roboto",sans-serif;
+  font-size: 160%;
+}
