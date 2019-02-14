@@ -1,0 +1,32 @@
+
+
+<br>
+<table border="strong black 1px">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>location</th>
+    <th>description</th>
+    <th>Contact</th>
+    <th>updatedDate</th>
+    <th>price</th>
+    <th>Category</th>
+    <th>image</th>
+
+  </tr>
+  <tbody>
+ 
+ <tr *ngFor="let product of products;let in = index">
+   
+    <td>{{products[in].id}}</td>
+    <td>{{products[in].name}}</td>
+    <td>{{products[in].location}}</td>
+    <td>{{products[in].description}}</td>
+    <td>{{products[in].contact}}</td>
+    <td>{{products[in].updatedDate}}</td>
+    <td>{{products[in].price}}</td>
+    <td>{{products[in].category}}</td>
+    <td>{{products[in].image}}</td>
+</tr>
+</tbody>
+</table>

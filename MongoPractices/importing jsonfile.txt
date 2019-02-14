@@ -1,0 +1,4 @@
+mongoimport --db population --collection zipcodes --file C:\data\db\zips.json
+
+
+in data ->db-> folder we can add zips.json file

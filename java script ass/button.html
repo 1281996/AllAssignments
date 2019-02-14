@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<form action="" method="post" class="form-disable">
+			<input type="text" name="name" placeholder="name"/>
+			<button type="submit" class="btn btn-default" name="roll" <?php echo isset($_POST['roll']) ? 'disabled="true"' : ''; ?> >Roll Branch </button> 			
+			<button type="submit" name="clicked" id="clicked" onblur="validate()" disabled value="true" >Roll Branch </button> 
+			<script>
+				function validate() {
+					
+					$("#clicked").attr("disabled",true);
+					if(valid) {
+						$("#clicked").attr("disabled",false);
+					}	
+				}
+			</script>
+		</form>		
+	</body>
+</html>
