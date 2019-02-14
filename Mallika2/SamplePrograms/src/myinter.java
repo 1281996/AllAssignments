@@ -1,0 +1,15 @@
+
+public interface myinter {
+	boolean method1();
+	byte method2(short s);
+}
+
+//interface urinterface implements myinter{}
+/*abstract class urclass implements myinter{
+	public boolean method1(){
+		return (true);
+	}
+}*/
+
+abstract class urclass implements myinter{
+}

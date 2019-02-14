@@ -1,0 +1,17 @@
+
+public class FinalL1Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void method2() throw new Exception{
+		
+	}
+	
+public void method3() throw Exception{
+		
+	}
+	
+
+}

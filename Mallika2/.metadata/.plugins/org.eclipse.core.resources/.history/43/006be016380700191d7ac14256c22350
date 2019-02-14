@@ -1,0 +1,24 @@
+
+import java.util.ArrayList; 
+  
+class Demo1 { 
+public void show() 
+    { 
+        ArrayList<String> list = new ArrayList<String>(); 
+        ArrayList<Integer> list1 = new ArrayList<Integer>(); 
+        boolean check = (list.getClass() == list1.getClass()); 
+        System.out.println(list.getClass());
+        System.out.println(list1.getClass());
+        System.out.println();
+        System.out.println(check); 
+    
+    }
+public static void main(String[] args) 
+    { 
+        Demo1 demo = new Demo1(); 
+        demo.show(); 
+        int a[] = new int[5]; // line 1 
+        int a11[] = new int[10]; // line 2 
+     
+}
+}
