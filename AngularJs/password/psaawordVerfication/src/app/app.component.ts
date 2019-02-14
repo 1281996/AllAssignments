@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
-
-import { PasswordValidator } from './password.validator';
-
+ import { PasswordValidator } from './password.validator';
+ 
 
 @Component({
   selector: 'app-root',
@@ -28,11 +27,9 @@ export class AppComponent implements OnInit {
     } , { validator: PasswordValidator }); 
 
   
-  }
-
   
 
-
+  }
 
 
 

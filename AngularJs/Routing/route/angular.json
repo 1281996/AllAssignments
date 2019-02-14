@@ -19,14 +19,18 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",  "src/quickr.ico","src/backGround.ico",
-              "src/assets"
+              "src/favicon.ico",
+              "src/quickr.ico",
+              "src/backGround.ico",
+              "src/assets",
+              "src/nature1.ico",
+              "src/nature12.ico",
+              "src/nature13.ico","src/nature14.ico","src/nature111.ico","src/quickr1.jpg"
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.css"
-             
             ],
             "scripts": []
           },

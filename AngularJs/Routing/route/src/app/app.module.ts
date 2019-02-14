@@ -12,6 +12,12 @@ import { AngularEntypoModule } from 'angular-entypo';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AppheaderproductComponent } from './appheaderproduct/appheaderproduct.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { SellComponent } from './sell/sell.component';
+import { BuyComponent } from './buy/buy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +26,17 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
    RegComponent,
    HeaderComponent,
-   FooterComponent
+   FooterComponent,
+   HomeComponent,
+   AppheaderproductComponent,
+   ForgetpasswordComponent,
+   SellComponent,
+   BuyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule,ReactiveFormsModule, HttpClientModule,
-     ShowHidePasswordModule.forRoot(),AngularEntypoModule
+     ShowHidePasswordModule.forRoot(),AngularEntypoModule,CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

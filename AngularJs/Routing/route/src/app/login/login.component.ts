@@ -10,8 +10,12 @@ import { UserAccount } from '../userAccount';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-title:"Quickr Login Page"
-@Input() response: any ;
+title:"Quickr Login Page";
+
+
+
+submitted:boolean=false;
+ response: any ;
   constructor(private fb: FormBuilder,private route:Router,private userService: UserService) { }
   loginForm: FormGroup;
 
@@ -26,13 +30,30 @@ title:"Quickr Login Page"
 })
   }
   onLogin(){
+    this.submitted=true
     console.log("in login() method")
     console.log(this.loginAccount)
       this.userService.validateUser(this.loginAccount)
-      .subscribe(data => console.log(data), error => console.log(error));
-      this.loginAccount=new LoginAccount();
+      .subscribe((response) =>{ 
+        this.response=response
+        console.log(this.response)});
+      
       console.log(this.loginAccount)
-    this.route.navigateByUrl("product");
-     }
 
+      if(this.response){
+
+      }
+    //this.route.navigateByUrl("product");
+     }
+     onProduct():any{
+     
+
+      this.route.navigateByUrl("");
+    
+
+     }
+     onLoginPage(){
+       
+           this.route.navigateByUrl("home");
+     }
 }

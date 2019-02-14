@@ -5831,3 +5831,11 @@ Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Failure to tra
 2019-01-14 16:13:14,528 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Mallika\SpringMvc\src\main\resources
 2019-01-14 16:13:14,530 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-01-14 16:13:14,554 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Mallika\SpringMvc\src\test\resources
+2019-02-01 12:06:07,419 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-02-01 12:06:07,441 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Mallika\SpringMVCSample\src\main\resources
+2019-02-01 12:06:07,445 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-02-01 12:06:07,445 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Mallika\SpringMVCSample\src\test\resources
+2019-02-01 12:06:09,067 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-01 12:06:09,068 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Mallika\SpringMvc\src\main\resources
+2019-02-01 12:06:09,069 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-01 12:06:09,069 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Mallika\SpringMvc\src\test\resources

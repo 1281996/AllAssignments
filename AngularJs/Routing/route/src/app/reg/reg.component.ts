@@ -17,13 +17,13 @@ export class RegComponent implements OnInit {
   constructor(private fb: FormBuilder,private route:Router,private userService: UserService) {}
   regForm: FormGroup;
   ngOnInit() {
-
+    /* Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]+$') */
     this.regForm = this.fb.group({
       name: ['', [Validators.required,Validators.maxLength(20),Validators.minLength(3) ]],
       /* email:['',[ Validators.required,Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')] ], */
       email:['',[ Validators.required,Validators.pattern('^[a-zA-Z0-9_.+-]+@gmail.com+$')] ],
       phonenumber:['',[Validators.required,Validators.minLength(10), Validators.maxLength(10),Validators.pattern('[6-9]\\d{9}')]],
-      password:['',[ Validators.required,Validators.maxLength(15),Validators.minLength(6),	Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]+$')] ],
+      password:['',[ Validators.required,Validators.maxLength(15),Validators.minLength(6)] ],
       confirmPassword:['', Validators.required ]
    }, { validator: PasswordValidator });
  }
