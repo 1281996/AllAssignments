@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.mallika.lambda.ArthemeticOperations&apos; to &apos;ArthemeticOperationsI&apos;&#x0D;&#x0A;- Original project: &apos;JavaFeatures8&apos;&#x0D;&#x0A;- Original element: &apos;com.mallika.lambda.ArthemeticOperations&apos;&#x0D;&#x0A;- Renamed element: &apos;com.mallika.lambda.ArthemeticOperationsI&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ArthemeticOperations&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.mallika.lambda{ArthemeticOperations.java[ArthemeticOperations" matchStrategy="1" name="ArthemeticOperationsI" qualified="false" references="true" similarDeclarations="false" stamp="1543493797061" textual="false" version="1.0"/>
+</session>

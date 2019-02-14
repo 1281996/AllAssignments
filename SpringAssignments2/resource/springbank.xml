@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<!-- Through property -->
+ <!-- <beans>
+
+
+
+<bean id="service1" class="com.mallika.bank.BankAccount">
+<property name="accountId" value="101"></property>
+<property name="accountHolderName" value="mallika"></property>
+<property name="accountType" value="current"></property>
+<property name="accountBalance" value="20000.0"></property>
+
+</bean>
+<bean id="service2" class="com.mallika.bank.BankAccount">
+<property name="accountId" value="102"></property>
+<property name="accountHolderName" value="prasad"></property>
+<property name="accountType" value="current"></property>
+<property name="accountBalance" value="20000.0"></property>
+
+</bean>
+
+<bean id="accountRepository1" class="com.mallika.bank.BankAccountepositoryImpl">
+
+<property name="bankAccount">
+<list>
+ <ref bean="service1"></ref>
+  <ref bean="service2"></ref>	
+</list>
+</property>
+
+</bean>
+
+<bean id="bankAccountServiceImpl" class="com.mallika.bank.BankAccountServiceImpl">
+
+<property name="accountRepository" ref="accountRepository1">
+</property>
+</bean>
+
+
+<bean id="bankAccouncon" class="com.mallika.bank.BankAccountController">
+
+<property name="accountServiceImpl" ref="bankAccountServiceImpl">
+</property></bean>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ </beans> -->
+ 
+ 
+ 
+<!--  auto wiring  By Name-->
+ 
+ <beans>
+ <bean name="controller" class="com.mallika.bank.BankAccountControllerImpl" autowire="byName"></bean>
+  <bean name="accountServiceImpl" class="com.mallika.bank.BankAccountServiceImpl" autowire="byName"></bean>
+
+
+ <bean name="accountRepository" class="com.mallika.bank.BankAccountepositoryImpl" autowire="byType">
+  <!-- <property name="bankAccount">
+<list>
+ <ref bean="bankAccount1"></ref>	
+ <ref bean="bankAccount2"></ref>	
+</list>
+</property>  -->
+</bean>
+
+
+<bean name="bankAccount1" class="com.mallika.bank.BankAccount">
+
+<property name="accountId" value="101"></property>
+<property name="accountHolderName" value="mallika"></property>
+<property name="accountType" value="current"></property>
+<property name="accountBalance" value="20000.0"></property>
+
+</bean>
+<bean name="bankAccount2" class="com.mallika.bank.BankAccount">
+
+<property name="accountId" value="102"></property>
+<property name="accountHolderName" value="prasad"></property>
+<property name="accountType" value="current"></property>
+<property name="accountBalance" value="20000.0"></property>
+
+</bean>
+
+
+ </beans>
+ 
+ 
+ <!-- Autowiring by by type -->
+ 
+ 
+ <!-- <beans>
+ 
+  <bean id="controller" class="com.mallika.bank.BankAccountControllerImpl" autowire="byType"></bean>
+  <bean id="service" class="com.mallika.bank.BankAccountServiceImpl" autowire="byType"></bean>
+
+
+ <bean id="repositry" class="com.mallika.bank.BankAccountepositoryImpl" autowire="byType">
+  <property name="bankAccount">
+<list>
+ <ref bean="bankAccount1"></ref>	
+ <ref bean="bankAccount2"></ref>	
+</list>
+</property> 
+</bean> 
+
+
+<bean id="bankAccount1" class="com.mallika.bank.BankAccount">
+
+<property name="accountId" value="101"></property>
+<property name="accountHolderName" value="mallika"></property>
+<property name="accountType" value="current"></property>
+<property name="accountBalance" value="20000.0"></property>
+
+</bean>
+
+<bean name="bankAccount2" class="com.mallika.bank.BankAccount">
+
+<property name="accountId" value="102"></property>
+<property name="accountHolderName" value="prasad"></property>
+<property name="accountType" value="current"></property>
+<property name="accountBalance" value="20000.0"></property>
+</bean>
+ </beans> 
+  -->
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- <bean name="bankAccount2" class="com.mallika.bank.BankAccount">
+
+<property name="accountId" value="102"></property>
+<property name="accountHolderName" value="prasad"></property>
+<property name="accountType" value="current"></property>
+<property name="accountBalance" value="20000.0"></property> -->
+
+<!-- //</bean> -->
+
+
+
+ 
+
+
+
+
+
+
+
+
+<!-- <bean id="service1" class="com.mallika.sample.Service" autowire="byName"></bean>
+<bean id="dao" class="com.mallika.sample.DAO" autowire="byName"></bean>
+<bean id="bank" class="com.mallika.sample.Bank">
+<property name="accountID" value="89"></property>
+</bean>
+ -->
+
+
+
+
+
+
+
+
+
+
+

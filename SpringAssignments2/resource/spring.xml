@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+	<!-- <bean id="address" class="com.mallika.spring.Address" >
+	<property name="street" value="beml"></property>
+	<property name="city" value="bang"></property>
+	<property name="country" value="india"></property>
+	<property name="zip" value="560066"></property>
+	</bean> -->
+	
+	<bean id="customer" class="com.mallika.spring.Customer">
+	
+	<property name="adress" ref="address"></property>
+	<property name="custId" value="123"></property>
+	
+	<property name="custName" value="mallika"></property>
+	
+	<property name="custNumber" value="9912567"></property>
+
+	
+	</bean>
+	<bean id="address" class="com.mallika.spring.Address">
+	<property name="street" value="beml"></property>
+	<property name="city" value="bang"></property>
+	<property name="country" value="india"></property>
+	<property name="zip" value="560066"></property>
+	</bean>
+	
+	
+</beans>
+
+
